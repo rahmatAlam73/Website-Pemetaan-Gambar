@@ -1,0 +1,150 @@
+<DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tugas 1 - Pemetaan Gambar</title>
+
+    <!-- Menghubungkan HTML dengan CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Judul -->
+        <h1>
+            Pemetaan Gambar - PULAU SAMALONA 
+        </h1>
+
+        <p class="deskripsi">
+            Image Map dengan Rectangle, Circle, dan Polygon
+        </p>
+
+
+        <!-- =================================================
+             OBJEK UTAMA
+             ================================================= -->
+    <div id="peta">
+
+        <img id="gambarUtama"
+            src="images/Pulau_Samalona2.jpg"
+            width="800"
+            height="500"
+            alt="Gambar utama untuk Image Map"
+            usemap="#petaGambar">
+
+        <!-- =================================================
+             IMAGE MAP
+             ================================================= -->
+
+        <map name="petaGambar">
+            <!-- AREA KLIK 1 - RECTANGLE -->
+             
+            <area shape="rect"
+            coords="20,260,250,480"
+            href="https://id.wikipedia.org/wiki/Laut"
+            target="_blank"
+            alt="Laut"
+            title="Laut">
+
+
+            <area
+            shape="circle"
+            coords="427,335,100"
+            href="https://id.wikipedia.org/wiki/Pulau"
+            target="_blank"
+            alt="Pulau"
+            title="Pulau">
+            
+             <area
+             shape="poly"
+             coords="20,15,500,10,780,20,785,120,560,150,250,130,20,110"
+             href="https://id.wikipedia.org/wiki/Langit"
+             target="_blank"
+             alt="Langit"
+             title="Langit">
+
+        </map>
+    </div>
+
+
+        <!-- =================================================
+             KETERANGAN
+             ================================================= -->
+
+        <div class="keterangan">
+
+            <h2>
+                Keterangan
+            </h2>
+
+            <div class="item">
+                <span class="nomor">1</span>
+
+                <div>
+                    <strong>Rectangle</strong>
+                    <p>
+                        Area berbentuk persegi panjang.
+                        Jika diklik akan membuka Laut.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <span class="nomor">2</span>
+
+                <div>
+                    <strong>Circle</strong>
+                    <p>
+                        Area berbentuk lingkaran.
+                        Jika diklik akan membuka Pulau.
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="item">
+                <span class="nomor">3</span>
+
+                <div>
+                    <strong>Polygon</strong>
+                    <p>
+                        Area berbentuk polygon.
+                        Jika diklik akan membuka Langit.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             INFORMASI TUGAS
+             ================================================= -->
+
+        <div class="info-tugas">
+
+            <h3>
+                Ketentuan Image Map
+            </h3>
+
+            <p>
+                Program ini menggunakan satu gambar,
+                satu image map, dan tiga area independen
+                dengan bentuk rectangle, circle, dan polygon.
+            </p>
+
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
